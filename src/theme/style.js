@@ -9,7 +9,6 @@ const globalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
-    transition: background-color .3s ease;
     background-color: ${(props) => props.theme.bodyColor};
     overflow-y: scroll;
     font-family: 'Inter', sans-serif;

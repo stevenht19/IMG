@@ -18,6 +18,7 @@ const Footer = () => {
       <Text 
         text='Developed by stevenht19 ☕'
         fs={.9}
+        fw={400}
       />
       <a href='https://github.com/stevenht19' target='_BLANK'>
         <Icon type='GITHUB' width={2} />

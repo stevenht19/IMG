@@ -1,5 +1,5 @@
-import Pictures from '@/components/organisms/Pictures'
 import Hero from '@/components/organisms/Hero'
+import Pictures from '@/components/organisms/Pictures'
 
 const Gallery = () => {
   return <>

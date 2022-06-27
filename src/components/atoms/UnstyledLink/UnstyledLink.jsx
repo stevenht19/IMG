@@ -10,6 +10,10 @@ const RouterLink = ({ className, path, children }) => (
 const StyledLink = styled(RouterLink)`
   color: unset;
   text-decoration: none;
+  color: ${props => props.theme.textColor};
+  svg {
+    fill: ${props => props.theme.textColor};
+  }
 `
 
 const UnstyledLink = ({ path = '/', children }) => {

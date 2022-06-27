@@ -5,6 +5,7 @@ const MainTitle = () => {
   return (
     <UnstyledLink>
       <Icon width={2.25} />
+      IMG
     </UnstyledLink>
   )
 }

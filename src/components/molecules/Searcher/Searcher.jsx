@@ -8,6 +8,7 @@ import styled from 'styled-components'
 
 const Form = styled.form`
   display: flex;
+  flex-wrap: wrap;
   gap: .7rem;
 `
 const InputBar = styled.div`

@@ -22,9 +22,9 @@ const SwiperMolecule = ({ images = [] }) => {
       spaceBetween={25}
     >
       {
-        createImage(hits)?.map(({ id, url }) => (
+        createImage(hits)?.map(({ id, url, tags }) => (
           <SwiperSlide key={id}>
-            <Card url={url} />
+            <Card url={url} tags={tags} />
           </SwiperSlide>
         ))
       }

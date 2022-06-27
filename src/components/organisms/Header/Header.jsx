@@ -15,7 +15,7 @@ const Header = () => {
   const { theme, onToggle } = useThemeContext()
 
   return (
-    <HeaderStyled id='app-header'>
+    <HeaderStyled>
       <MainTitle />
       <IconButton onClick={onToggle}>
         <Icon 

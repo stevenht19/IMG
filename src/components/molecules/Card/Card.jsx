@@ -8,10 +8,13 @@ const CardStyled = styled.div`
   }
 `
 
-const Card = ({ url }) => {
+const Card = ({ url, tags }) => {
   return (
     <CardStyled>
-      <Image url={url} br />
+      <Image 
+        url={url} 
+        alt={tags} br 
+      />
     </CardStyled>
   )
 }

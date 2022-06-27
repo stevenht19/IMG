@@ -1,5 +1,6 @@
 import { useImagesContext } from '@/hooks/useImagesContext'
 import Title from '@/components/atoms/Title'
+import Skeleton from '@/components/atoms/Skeleton'
 import Picture from '@/components/molecules/Picture'
 import Infinite from '@/components/molecules/Infinite'
 import EndMessage from '@/components/molecules/EndMessage'
@@ -11,24 +12,24 @@ const Main = styled.main`
 `
 
 const Pictures = () => {
+  const arrayHelper = new Array(15).fill('ñ')
   const { 
     images, 
     onNextPage, 
     hasMore, 
-    isLoading,
     searched,
-    last_search
+    isLoading,
   } = useImagesContext()
 
   return (
     <Main>
       {
-        (images.length && last_search !== 'nature') &&
+        searched &&
         <Title 
           type='h2' 
-          text={!searched ? 'Last search' : `Results of ${decodeURI(searched)}`} 
           fw={600}
           fs={2}
+          text={`Results of ${decodeURI(searched)}`} 
         />
       }
       <Infinite
@@ -37,16 +38,20 @@ const Pictures = () => {
         hasMore={hasMore}
         loader={<Loader />}
         endMessage={<EndMessage />}
+        isLoading={isLoading}
       >
         {
-          !isLoading && (
-            images?.map((image) => (
-              <Picture 
-                key={image.id}
-                {...image} 
-              />
-            ))
-          )
+          isLoading ?
+          arrayHelper.map((_, i) => (
+            <Skeleton key={i} />
+          ))
+          :
+          images.map((image) => (
+            <Picture 
+              key={image.id} 
+              {...image} 
+            />
+          ))
         }
       </Infinite>
     </Main>

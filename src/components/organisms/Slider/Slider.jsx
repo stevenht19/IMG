@@ -23,8 +23,8 @@ const Slider = ({ image }) => {
       <Title 
         type='h2' 
         text='Similar Images' 
-        fw={800} 
-        fs={1.9} 
+        fw={700} 
+        fs={1.7} 
       />
       {
         isLoading ? 

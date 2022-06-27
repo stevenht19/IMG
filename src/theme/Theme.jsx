@@ -8,9 +8,8 @@ const darkMode = {
   magentaGradient: 'rgb(193, 168, 226)',
   input: '#fff',
   buttonText: '#101010',
-  iconButton: '#fff',
   placeholder: '#A0AEC0',
-  textColor: '#fff',
+  textColor: '#E2E8F0',
   boxColor: 'RGBA(255, 255, 255, 0.06)',
   footerColor: 'rgba(0, 0, 0, 0.24)'
 }
@@ -21,7 +20,6 @@ const lightMode = {
   magentaGradient: 'rgb(116, 97, 195)',
   input: '#EDF2F7',
   buttonText: '#fff',
-  iconButton: 'rgb(49, 49, 49)',
   placeholder: '#A0AEC0',
   textColor: 'rgb(49, 49, 49)',
   boxColor: '#fff',

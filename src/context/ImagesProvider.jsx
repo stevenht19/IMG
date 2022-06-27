@@ -12,7 +12,7 @@ const initialState = {
   totalHits: 0,
   per_page: 0,
   isLoading: true,
-  last_search: 'nature'
+  last_search: 'nature',
 }
 
 const ImagesProvider = ({ children }) => {

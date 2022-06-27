@@ -10,8 +10,9 @@ const opacityAnimation = keyframes`
 
 const ImageStyled = styled.img.attrs((props) => ({
   src: props.src,
+  alt: props.alt
 }))`
-  animation: ${opacityAnimation} 1s ease-in-out;
+  animation: ${opacityAnimation} .4s ease-in-out;
   display: block;
   width: 100%;
   object-fit: cover;
@@ -19,12 +20,13 @@ const ImageStyled = styled.img.attrs((props) => ({
   ${props => props.br && `border-radius: ${props.br}`};
 `
 
-const Image = ({ url, h = 0, br = 0 }) => {
+const Image = ({ url, h = 0, br = 0, alt }) => {
   return (
     <ImageStyled 
       src={url} 
       h={h} 
       br={br}
+      alt={alt}
     />
   )
 }

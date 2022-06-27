@@ -28,7 +28,7 @@ const Picture = ({
     <PictureStyled>
       <UnstyledLink path={`image/${id}`}>
         <LikeNumber number={likes} />
-        <Image url={url} />
+        <Image url={url} alt={tags} />
         <Caption tags={texts} />
       </UnstyledLink>
     </PictureStyled>

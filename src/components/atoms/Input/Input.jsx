@@ -19,7 +19,7 @@ const InputStyled = styled.input`
 const Input = ({
   onChange, 
   type = 'text', 
-  placeholder = 'Type something to search',
+  placeholder = 'Type something',
   name = 'name'
 }) => {
   return (
